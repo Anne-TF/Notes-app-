@@ -1,0 +1,27 @@
+<div class='col-md-5 mx-auto rounded'>
+  <div class='card'>
+    <div class='card-header d-flex justify-content-center'>
+      Join us!
+    </div>
+    <div class='card-body'>
+    <form action='/sign-up' method='post'>
+        <div class='form-group'>
+          <input type='text' id='name' class='form-control' name='name' placeholder='Your full name here' autofocus required>
+        </div>
+        <div class='form-group'>
+          <input type='mail' id='email' class='form-control' name='email' placeholder='example@gmail.com' required>
+        </div>
+        <div class='form-group'>
+          <input type='text' id='username' class='form-control' name='username' placeholder='A cool username here!' required>
+        </div>
+        <div class='form-group'>
+          <input type='password' id='password' class='form-control' name='password' placeholder='Password' required>
+        </div>
+        <div class='form-group'>
+          <input type='password' id='confirm_password' class='form-control' name='confirm_password' placeholder='Confirm password' required>
+        </div>
+        <button action='send' class='btn btn-primary btn-block'>Register <i class='fas fa-angle-right'></i></button>
+    </form>
+  </div>
+  </div>
+</div>

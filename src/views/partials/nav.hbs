@@ -1,0 +1,36 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-row">
+    <a class="navbar-brand justify-content-start d-flex flex-row" href="/">Notes app</a>
+
+    <ul class="navbar-nav d-flex flex-row mr-auto">
+        <li class="d-flex mr-auto nav-item active p-2">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="d-flex mr-auto nav-item p-2">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
+
+    {{#if user}}
+    <div class="dropdown ml-auto">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notes</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="/notes">View all notes</a>
+        <a class="dropdown-item" href="/add">Add a note</a>
+        <a class="dropdown-item" href="/logout">Logout</a>
+      </div>
+
+    {{else}}
+    <ul class='navbar-nav ml-auto d-flex flex-row'>
+      <li class='nav-item active'>
+        <a href='/sign-up' class='nav-link p-2'>Sign up</a>
+      </li>
+      <li class='nav-item active'>
+        <a href='/sign-in' class='nav-link p-2'>Log In</a>
+      </li>
+  </ul>
+
+    {{/if}}
+    </div>
+  </nav>
+</div>
